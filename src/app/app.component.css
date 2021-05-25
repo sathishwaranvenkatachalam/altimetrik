@@ -1,0 +1,132 @@
+.main-container {
+    background: #eaeaea;
+    padding: 1rem;
+}
+
+.header h2{
+    margin: 0px;
+}
+
+.header h3{
+    margin: 0.5rem 0px;
+}
+
+.flex {
+    display: flex;
+}
+
+.nav-list {
+    width: 20%;
+    padding: 2rem;
+}
+
+.nav-item {
+    color: rgb(128, 128, 128);
+    margin: 0.75rem 0px;
+}
+
+.nav-item:first-child {
+    margin-top: 0px;
+}
+
+.nav-item.active {
+    color: rgb(37, 37, 37);
+}
+
+.serach-container {
+    width: 80%;
+    padding: 2rem 0.5rem;
+}
+
+.search-bar {
+    margin: 0px 1rem;
+    padding:  0.5rem;
+    background: #fff;
+    border-radius: 8px;
+    border: 0.5px solid lightgrey;
+}
+
+.search-bar input {
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.document-list {
+    display: flex;
+    margin: 1rem 0px;
+    flex-wrap: wrap;
+}
+
+.document-item {
+    width: 25%;
+}
+
+.document-container {
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    padding: 0.25rem 1rem;
+    background: #fff;
+    position: relative;
+}
+
+.document-category {
+    position: absolute;
+    padding: 0.2rem 2rem;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: rgba(241, 156, 156, 0.5);
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+.document-detail {
+    margin-top: 4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    max-width: 15vw;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media screen and (max-width:720px) {
+    .flex {
+        display: block;
+    }
+    .nav-list {
+        display: flex;
+        overflow-x: auto;
+        width: 100%;
+        padding: 0px;
+        margin: 1rem;
+    }
+    .nav-item {
+        padding: 0px 1rem;
+        line-height: 0.5;
+    }
+    .nav-item:first-child {
+        margin-top: 0.75rem;
+    }
+    .serach-container {
+        padding: 0.5rem 0px;
+        width: 100%;
+    }
+    .document-list {
+        display: block;
+    }
+    .document-item {
+        width: 100%;
+        padding: 0.25rem 0px;
+    }
+    .document-detail {
+        max-width: 70vw;
+    }
+
+}
